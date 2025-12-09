@@ -78,11 +78,13 @@ class EstadisticaInferencial:
         Returns:
             tuple: (límite_inferior, límite_superior, margen_error)
         """
+        # Aplicar corrección de continuidad para proporciones extremas (0 o 1)
+        CONTINUITY_CORRECTION = 0.5
         if p_muestral <= 0 or p_muestral >= 1:
             if p_muestral == 0:
-                p_muestral = 0.5 / n
+                p_muestral = CONTINUITY_CORRECTION / n
             elif p_muestral == 1:
-                p_muestral = 1 - 0.5 / n
+                p_muestral = 1 - CONTINUITY_CORRECTION / n
         
         alpha = 1 - nivel_confianza
         z_critico = stats.norm.ppf(1 - alpha/2)
@@ -128,7 +130,7 @@ class EstadisticaInferencial:
             varianza_conocida: True si se conoce la varianza poblacional
             
         Returns:
-            tuple: (estadístico, valor_p, decisión)
+            tuple: (estadístico, valor_p)
         """
         error_estandar = desviacion / math.sqrt(n)
         
