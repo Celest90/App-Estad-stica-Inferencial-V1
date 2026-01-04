@@ -1,0 +1,33 @@
+[client]
+showErrorDetails = true
+toolbarMode = "auto"
+showSidebarNavigation = true
+
+[server]
+maxUploadSize = 100
+
+[theme]
+primaryColor = "#022601"
+backgroundColor = "#dafdba"
+secondaryBackgroundColor = "#1ba67e"
+textColor = "#000000"
+borderColor = "#89dba8"
+baseRadius = "small"
+buttonRadius = "medium"
+font = "Space Mono:https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+showSidebarBorder = true
+showWidgetBorder = true
+
+redColor = "#F54D41"
+orangeColor = "#F29F05"
+yellowColor = "#eff299"
+blueColor = "#337AA6"
+greenColor = "#107357"
+violetColor = "#A775C4"
+grayColor = "#A6A6A6"
+
+
+[theme.sidebar]
+primaryColor = "#022601"
+backgroundColor = "#84e4a8"
+font = "'Space Mono':https://fonts.googleapis.com/css2?family=Space+Mono&display=swap"
