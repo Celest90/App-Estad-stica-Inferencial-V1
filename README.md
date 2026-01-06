@@ -70,7 +70,7 @@ Ejecute la aplicación con:
 
 ```bash
 
-python estadistica_inferencial.py
+python streamlit run inicio.py
 ```
 
 ## Conceptos Estadísticos
